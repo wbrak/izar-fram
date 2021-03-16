@@ -2,12 +2,12 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-use Dotenv\Dotenv;
 use IzarFramework\Http\Middleware\Auth;
 use IzarFramework\Http\Middleware\Session;
 use IzarFramework\Providers\ControllerServiceProvider;
 use IzarFramework\Providers\SessionServiceProvider;
 use IzarFramework\Providers\ViewServiceProvider;
+use Dotenv\Dotenv;
 use Laminas\Diactoros\Response;
 use Laminas\Diactoros\ServerRequestFactory;
 use Laminas\HttpHandlerRunner\Emitter\SapiEmitter;

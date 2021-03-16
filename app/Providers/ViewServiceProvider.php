@@ -17,7 +17,7 @@ class ViewServiceProvider extends AbstractServiceProvider
     /**
      * @var array
      */
-    protected array $provides = [
+    protected $provides = [
             View::class
         ];
 

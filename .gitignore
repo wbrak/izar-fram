@@ -1,5 +1,6 @@
 /.idea/
 .env
+/bootstrap/cache
 /vendor/
 info.txt
 readme.txt

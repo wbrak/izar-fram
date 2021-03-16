@@ -38,8 +38,7 @@
   },
   "autoload": {
     "psr-4": {
-      "IzarFramework\\": "app/",
-      "IzarFramework\\BoundedContext\\": "src/BoundedContext/"
+      "IzarFramework\\": "app/"
     },
     "files": [
       "app/Http/Helpers.php"

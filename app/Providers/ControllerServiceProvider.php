@@ -18,7 +18,7 @@ class ControllerServiceProvider extends AbstractServiceProvider
     /**
      * @var array
      */
-    protected array $provides = [
+    protected $provides = [
             HomeController::class
         ];
 

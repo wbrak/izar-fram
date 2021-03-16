@@ -15,7 +15,7 @@ class SessionServiceProvider extends AbstractServiceProvider
     /**
      * @var array
      */
-    protected array $provides = [
+    protected $provides = [
             Session::class
         ];
 

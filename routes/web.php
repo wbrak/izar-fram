@@ -1,6 +1,5 @@
 <?php
 
-use League\Route\RouteCollection;
 use League\Route\RouteGroup;
 use League\Route\Router;
 use League\Route\Strategy\ApplicationStrategy;
