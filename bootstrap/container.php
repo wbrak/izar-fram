@@ -41,11 +41,11 @@ $container->addServiceProvider(new ControllerServiceProvider());
 
 $container->share(Auth::class)->addArgument($container->get(Session::class));
 
-$route = require base_path('routes/web.php');
-//Kint::dump($route);
+$router = require base_path('routes/web.php');
+//Kint::dump($router);
 
 $container->share('emitter', SapiEmitter::class);
 
-$response = $route->dispatch($container->get('request'), $container->get('response'));
+$response = $router->dispatch($container->get('request'), $container->get('response'));
 
 $container->get('emitter')->emit($response);

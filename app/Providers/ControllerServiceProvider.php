@@ -29,7 +29,6 @@ class ControllerServiceProvider extends AbstractServiceProvider
     public function register()
     {
         $this->getContainer()->add(HomeController::class)->addArgument(
-            $this->getContainer()->get(View::class)
-        );
+            $this->getContainer()->get(View::class));
     }
 }

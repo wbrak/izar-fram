@@ -23,11 +23,9 @@ class HomeController extends Controller
     }
 
     /**
-     * @param $request
-     *
      * @return ResponseInterface
      */
-    public function index($request)
+    public function index()
     {
         return $this->view->render('home');
     }
