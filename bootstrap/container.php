@@ -2,7 +2,6 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-use IzarFramework\Http\Middleware\Auth;
 use IzarFramework\Http\Middleware\Session;
 use IzarFramework\Providers\ControllerServiceProvider;
 use IzarFramework\Providers\SessionServiceProvider;
@@ -38,8 +37,6 @@ $container->share('request', function () {
 $container->addServiceProvider(new SessionServiceProvider());
 $container->addServiceProvider(new ViewServiceProvider());
 $container->addServiceProvider(new ControllerServiceProvider());
-
-$container->share(Auth::class)->addArgument($container->get(Session::class));
 
 $router = require base_path('routes/web.php');
 //Kint::dump($router);
